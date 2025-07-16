@@ -1,0 +1,41 @@
+@import url('variables.css');
+
+.sidebar {
+    background: var(--sidebar-gradient);
+    box-shadow: var(--sidebar-shadow);
+
+    .profile-card {
+        background-color: var(--profile-card-bg-color);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+
+        .user-name {
+            color: var(--profile-card-color1);
+        }
+        
+        .user-type {
+            color: var(--profile-card-color2);
+        }
+    }
+
+    nav {
+        a {
+            i {
+                color: #e3e3e3;
+            }
+
+            .aside-ident-text {
+                color: white;
+            }
+        }
+    }
+
+    .leave {
+        i {
+            color: #00a0c8;
+        }
+
+        .aside-ident-text {
+            color: white;
+        }
+    }
+}
