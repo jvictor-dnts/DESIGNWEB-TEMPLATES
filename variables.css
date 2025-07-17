@@ -1,10 +1,24 @@
 :root {
-    --sidebar-gradient: linear-gradient(to bottom, #006a84, #004151);
+    --brand-50: #b4f3ff;
+    --brand-100: #88ebff;
+    --brand-200: #17d8ff;
+    --brand-300: #00a8c8;
+    --brand-400: #0097bd;
+    --brand-500: #0088aa;
+    --brand-600: #007e9e;
+    --brand-700: #006a84;
+    --brand-800: #004f62;
+    --brand-900: #004151;
+    --brand-950: #002933;
+
+    --shadow-brand-color: rgba(0, 73, 92, 0.6);
+
+    --sidebar-gradient: linear-gradient(to bottom, var(--brand-700), var(--brand-900));
     --sidebar-shadow: 2px 0 8px 5px rgb(0, 74, 92, .6);
-    --sidebar-selected-gradient: linear-gradient(to right, #0088aa, #004f62);
-    --cards-gradient: linear-gradient(to bottom, #004151, #006a84, #007e9e);
+    --cards-gradient: linear-gradient(to bottom, var(--brand-900), var(--brand-700), var(--brand-600));
     --profile-card-bg-color: white;
-    --profile-card-color1: #004151;
     --profile-card-color2: #084c5d;
-    --profile-card-arrow-color: #00a0c8;
+    --page-bg-color: #f9f4ff;
+    --search-container-color: var(--brand-600);
+    --search-container-color2: var(--brand-400);
 }

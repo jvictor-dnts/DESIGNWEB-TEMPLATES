@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Dashboard - template</title>
 </head>
 <body>
     <aside class="sidebar">
         <i class="bi bi-chevron-right"></i>
         <div class="profile-card">
-            <img src="../image.png" alt="Imagem de usuário">
-            <div class="texts">
-                <h3 class="user-name">João Victor</h3>
-                <span class="user-type">Aluno</span>
+            <div class="main-profile-part">
+                <img src="../image.png" alt="Imagem de usuário">
+                <div class="texts">
+                    <h3 class="user-name">João Victor</h3>
+                    <span class="user-type">Aluno</span>
+                </div>
             </div>
             <i class="bi bi-arrow-down-circle"></i>
         </div>
 
         <nav class="links">
-            <a href="#">
+            <a href="#" class="selected">
                 <i class="bi bi-house"></i>
                 <span class="aside-ident-text">Início</span>
             </a>
@@ -57,17 +60,17 @@
         </button>
     </div>
 
-    <main>
+    <main class="dashboard">
         <div class="card courses">
             <h3 class="card-title">Meus cursos</h3>
-            <div class="course">
+            <div class="course card-section">
                 <h4 class="card-section-title">HTML 5</h4>
-                <h5 class="card-section-subtitle">Seu progresso</h5>
+                <h5 class="card-section-subtitle">Seu progresso:</h5>
                 <div class="progress-bar-background">
-                    <span class="progress-bar" data-percentage="88.7"></span>
+                    <div class="progress-bar percentage-bar" data-percentage="88.7"></div>
                 </div>
 
-                <h5 class="card-section-subtitle">Suas atividades</h5>
+                <h5 class="card-section-subtitle">Suas atividades:</h5>
                 <ul class="tasks-list">
                     <li>
                         <input type="checkbox">Estudo dirigido sobre textos alternativos e rótulos de ária
@@ -78,14 +81,14 @@
                 </ul>
             </div>
 
-            <div class="course">
+            <div class="course card-section">
                 <h4 class="card-section-title">CSS 3</h4>
-                <h5 class="card-section-subtitle">Seu progresso</h5>
+                <h5 class="card-section-subtitle">Seu progresso:</h5>
                 <div class="progress-bar-background">
-                    <span class="progress-bar" data-percentage="74"></span>
+                    <div class="progress-bar percentage-bar" data-percentage="74"></div>
                 </div>
 
-                <h5 class="card-section-subtitle">Suas atividades</h5>
+                <h5 class="card-section-subtitle">Suas atividades:</h5>
                 <ul class="tasks-list">
                     <li>
                         <input type="checkbox">Criação de um formulário responsivo com grid layout
@@ -93,14 +96,14 @@
                 </ul>
             </div>
 
-            <div class="course">
+            <div class="course card-section">
                 <h4 class="card-section-title">C# e .NET</h4>
-                <h5 class="card-section-subtitle">Seu progresso</h5>
+                <h5 class="card-section-subtitle">Seu progresso:</h5>
                 <div class="progress-bar-background">
-                    <span class="progress-bar" data-percentage="63.3"></span>
+                    <div class="progress-bar percentage-bar" data-percentage="63.3"></div>
                 </div>
 
-                <h5 class="card-section-subtitle">Suas atividades</h5>
+                <h5 class="card-section-subtitle">Suas atividades:</h5>
                 <ul class="tasks-list">
                     <li>
                         <input type="checkbox">Criação de uma aplicação com Windows Forms (livre)
@@ -111,7 +114,7 @@
 
         <div class="card recommendations">
             <h3 class="card-title">Recomendações</h3>
-            <div class="recommendation">
+            <div class="recommendation card-section">
                 <h4 class="card-section-title">JavaScript</h4>
                 <h5 class="card-section-subtitle">Seus cursos relacionados:</h5>
                 <ul class="courses-list">
@@ -120,7 +123,7 @@
                 </ul>
             </div>
 
-            <div class="recommendation">
+            <div class="recommendation card-section">
                 <h4 class="card-section-title">C++</h4>
                 <h5 class="card-section-subtitle">Seus cursos relacionados:</h5>
                 <ul class="courses-list">
@@ -181,7 +184,7 @@
                     <span class="result-number">8,5</span>
                 </div>
                 <div class="result-bar-background">
-                    <span class="result-bar" data-percentage="80.25"></span>
+                    <div class="result-bar percentage-bar" data-percentage="80.25"></div>
                 </div>
             </div>
             <div class="result">
@@ -190,7 +193,7 @@
                     <span class="result-number">9,5</span>
                 </div>
                 <div class="result-bar-background">
-                    <span class="result-bar" data-percentage="92"></span>
+                    <div class="result-bar percentage-bar" data-percentage="92"></div>
                 </div>
             </div>
             <div class="result">
@@ -199,10 +202,16 @@
                     <span class="result-number">6,4</span>
                 </div>
                 <div class="result-bar-background">
-                    <span class="result-bar" data-percentage="57.95"></span>
+                    <div class="result-bar percentage-bar" data-percentage="57.95"></div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script>
+        document.querySelectorAll('.percentage-bar').forEach(bar => {
+            bar.style.width = `${bar.dataset.percentage}%`
+        })
+    </script>
 </body>
 </html>
