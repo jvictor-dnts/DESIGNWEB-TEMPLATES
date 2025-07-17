@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('../../variables.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #76ABFF 0%, #007391 100%);
+  min-height: 100vh;
+  box-sizing: border-box;
+  border: 2px solid #222;
+  transition: background 0.4s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.caixadoform {
+  background: #f0f0f0;
+  padding: 18px 38px 24px 38px;
+  border-radius: 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  width: 25.6vw;
+  min-width: 300px;
+  margin-bottom: 18px;
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+.tituloform {
+  color: #3A86FF;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  transition: color 0.4s;
+  line-height: 36px;
+}
+
+.formlabel {
+  color: #008CB0;
+  font-weight: 600;
+  margin-top: 12px;
+  font-size: 1.05rem;
+  transition: color 0.4s;
+}
+
+.inputform {
+  border: 1px solid #0091B5;
+  border-radius: 8px;
+  padding: 2px 6px 2px 12px;
+  height: 2.2em;
+  margin-top: 4px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  font-size: 15px;
+  transition: box-shadow .2s ease;
+}
+
+.inputform:focus {
+  border-color: #3490fc;
+  box-shadow: 0 0 3px 2px rgba(52, 144, 252, .4);
+}
+
+.inputform::placeholder {
+  color: #0095ba;
+  font-size: .85rem;
+}
+
+.button-publicar {
+  margin-top: 8px;
+  padding: 12px 0;
+  width: 320px;
+  background: #3A86FF;
+  color: #fff;
+  font-size: 1.30rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 38, 82, 0.12);
+}
+
+.button-publicar:hover {
+  background: #2176d3;
+}
+
+.icones {
+  position: absolute;
+  right: 38px;
+  bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.circulos {
+  width: 44px;
+  height: 44px;
+  background: #eaf6fe;
+  border: 2px solid #7ec8fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #43b1fd;
+  box-shadow: 0 2px 8px rgba(52, 144, 252, 0.14);
+  cursor: pointer;
+}
+
+/*escuro */
+body.escuro {
+  background: linear-gradient(135deg, #073a50 0%, #01202a 100%);
+}
+
+body.escuro .caixadoform {
+  background: #093848;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+body.escuro .tituloform {
+  color: #fff;
+}
+
+body.escuro .formlabel {
+  color: #ffffff;
+}
+
+body.escuro .inputform {
+  background: #0d2533;
+  color: #fff;
+  border-color: #fff;
+  border: 1px solid;
+}
+
+body.escuro .button-publicar {
+  background: #007E9E;
+  color: #fff;
+}
+
+body.escuro .button-publicar:hover {
+  background: #025e75;
+}
+
+body.escuro .circulos {
+  background: #092e3a;
+  color: #7ec8fd;
+  border-color: #3490fc;
+}
