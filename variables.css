@@ -2,6 +2,7 @@
     --brand-50: #b4f3ff;
     --brand-100: #88ebff;
     --brand-200: #17d8ff;
+    --aaaaaaaaa: #7ec8fd;
     --brand-300: #00a8c8;
     --brand-400: #0097bd;
     --brand-500: #0088aa;
@@ -14,7 +15,7 @@
     --shadow-brand-color: rgba(0, 73, 92, 0.6);
 
     --sidebar-gradient: linear-gradient(to bottom, var(--brand-700), var(--brand-900));
-    --sidebar-shadow: 2px 0 8px 5px rgb(0, 74, 92, .6);
+    --sidebar-shadow: 2px 0 4px 3px rgb(0, 74, 92, .6);
     --cards-gradient: linear-gradient(to bottom, var(--brand-900), var(--brand-700), var(--brand-600));
     --profile-card-bg-color: white;
     --profile-card-color2: #084c5d;

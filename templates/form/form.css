@@ -10,11 +10,11 @@
 
 body {
   margin: 0;
-  background: linear-gradient(135deg, #76ABFF 0%, #007391 100%);
+  background-color: var(--brand-400);
   min-height: 100vh;
   box-sizing: border-box;
-  border: 2px solid #222;
-  transition: background 0.4s;
+  transition: background-color 0.4s;
+  overflow: hidden;
 }
 
 .container {
@@ -28,19 +28,19 @@ body {
 
 .caixadoform {
   background: #f0f0f0;
-  padding: 18px 38px 24px 38px;
+  padding: 20px 38px 24px 38px;
   border-radius: 28px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
   display: flex;
   flex-direction: column;
   width: 25.6vw;
   min-width: 300px;
   margin-bottom: 18px;
-  transition: background 0.4s, box-shadow 0.4s;
+  transition: background-color 0.4s;
 }
 
 .tituloform {
-  color: #3A86FF;
+  color: var(--brand-400);
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
@@ -51,7 +51,7 @@ body {
 }
 
 .formlabel {
-  color: #008CB0;
+  color: var(--brand-500);
   font-weight: 600;
   margin-top: 12px;
   font-size: 1.05rem;
@@ -59,44 +59,49 @@ body {
 }
 
 .inputform {
-  border: 1px solid #0091B5;
+  border: 1px solid var(--brand-400);
   border-radius: 8px;
   padding: 2px 6px 2px 12px;
   height: 2.2em;
   margin-top: 4px;
   font-size: 1rem;
-  background: #fff;
+  background: white;
   color: #222;
   font-size: 15px;
   transition: box-shadow .2s ease;
 }
 
 .inputform:focus {
-  border-color: #3490fc;
+  border-color: var(--brand-300);
   box-shadow: 0 0 3px 2px rgba(52, 144, 252, .4);
 }
 
 .inputform::placeholder {
-  color: #0095ba;
+  color: var(--brand-500);
   font-size: .85rem;
 }
 
 .button-publicar {
-  margin-top: 8px;
-  padding: 12px 0;
-  width: 320px;
-  background: #3A86FF;
+  margin-top: 12px;
+  padding: 1vh 0;
+  width: 16vw;
+  background-color: var(--brand-300);
   color: #fff;
-  font-size: 1.30rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 38, 82, 0.12);
+  box-shadow: 0 1px 8px rgba(0, 38, 82, 0.3);
+  transition: .2s background-color ease, .2s box-shadow ease;
 }
 
 .button-publicar:hover {
-  background: #2176d3;
+  background-color: var(--brand-400);
+}
+
+.button-publicar:active {
+  box-shadow: 0 2px 5px 4px rgba(0, 80, 172, 0.4);
 }
 
 .icones {
@@ -108,11 +113,11 @@ body {
   gap: 16px;
 }
 
-.circulos {
+.circulo {
   width: 44px;
   height: 44px;
   background: #eaf6fe;
-  border: 2px solid #7ec8fd;
+  border: 2px solid var(--brand-300);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -121,44 +126,22 @@ body {
   color: #43b1fd;
   box-shadow: 0 2px 8px rgba(52, 144, 252, 0.14);
   cursor: pointer;
+
+  i {
+    font-size: 22px;
+  }
 }
 
-/*escuro */
-body.escuro {
-  background: linear-gradient(135deg, #073a50 0%, #01202a 100%);
+.circulo:first-child {
+  background: none;
+  border-color: white;
+  box-shadow: 0 0 3px 2px rgba(255, 255, 255, .4);
+
+  i {
+    color: white;
+  }
 }
 
-body.escuro .caixadoform {
-  background: #093848;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-}
-
-body.escuro .tituloform {
-  color: #fff;
-}
-
-body.escuro .formlabel {
-  color: #ffffff;
-}
-
-body.escuro .inputform {
-  background: #0d2533;
-  color: #fff;
-  border-color: #fff;
-  border: 1px solid;
-}
-
-body.escuro .button-publicar {
-  background: #007E9E;
-  color: #fff;
-}
-
-body.escuro .button-publicar:hover {
-  background: #025e75;
-}
-
-body.escuro .circulos {
-  background: #092e3a;
-  color: #7ec8fd;
-  border-color: #3490fc;
+.circulo:nth-last-child {
+  box-shadow: 0 0 4px 3px rgba(0, 140, 176, .4);
 }
