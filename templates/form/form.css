@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -42,7 +42,7 @@ body {
 .tituloform {
   color: var(--brand-400);
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 4px;
   letter-spacing: 1px;
@@ -71,7 +71,20 @@ body {
   transition: box-shadow .2s ease;
 }
 
-.inputform:focus {
+textarea {
+  resize: none;
+  border: 1px solid var(--brand-400);
+  border-radius: 8px;
+  padding: 3px 6px 3px 8px;
+  transition: box-shadow .2s ease;
+  margin-top: 4px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+:where(.inputform, textarea):focus {
   border-color: var(--brand-300);
   box-shadow: 0 0 3px 2px rgba(52, 144, 252, .4);
 }
@@ -82,7 +95,7 @@ body {
 }
 
 .button-publicar {
-  margin-top: 12px;
+  margin: 23px auto 0;
   padding: 1vh 0;
   width: 16vw;
   background-color: var(--brand-300);
@@ -92,8 +105,8 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 1px 8px rgba(0, 38, 82, 0.3);
-  transition: .2s background-color ease, .2s box-shadow ease;
+  box-shadow: 0 1px 8px 0 rgba(0, 38, 82, 0.3);
+  transition: .2s background-color ease, .3s box-shadow ease;
 }
 
 .button-publicar:hover {
@@ -101,13 +114,13 @@ body {
 }
 
 .button-publicar:active {
-  box-shadow: 0 2px 5px 4px rgba(0, 80, 172, 0.4);
+  box-shadow: 0 1px 3px 2px rgba(0, 80, 172, .4);
 }
 
 .icones {
   position: absolute;
-  right: 38px;
-  bottom: 36px;
+  right: 24px;
+  bottom: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -126,6 +139,7 @@ body {
   color: #43b1fd;
   box-shadow: 0 2px 8px rgba(52, 144, 252, 0.14);
   cursor: pointer;
+  transition: box-shadow .2s ease;
 
   i {
     font-size: 22px;
@@ -140,8 +154,16 @@ body {
   i {
     color: white;
   }
+
+  &:hover {
+    box-shadow: 0 0 4px 3px rgba(255, 255, 255, .6);
+  }
 }
 
-.circulo:nth-last-child {
-  box-shadow: 0 0 4px 3px rgba(0, 140, 176, .4);
+.circulo:last-child {
+  box-shadow: 0 0 3px 2px rgba(0, 204, 255, 0.4);
+
+  &:hover {
+    box-shadow: 0 0 4px 3px rgba(0, 204, 255, .6);
+  }
 }
