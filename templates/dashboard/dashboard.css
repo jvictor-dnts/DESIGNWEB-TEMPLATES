@@ -185,7 +185,7 @@ body {
 .dashboard {
     grid-column: 2;
     display: flex;
-    width: 58%;
+    width: 40em;
     margin: 3.9em 0 0 40px;
     flex-wrap: wrap;
     justify-content: space-between;
