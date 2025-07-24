@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,16 +58,42 @@
 
     <main class="areas-container">
         <div class="manage-area published-courses">
-            <h3 class="area-title">Cursos publicados</h3>
-            <button class="toggle-area-button"></button>
+            <div class="area-header">
+                <h3 class="area-title">Cursos publicados</h3>
+                <button class="toggle-area-button"></button>
+            </div>
         </div>
         <div class="manage-area not-done-courses">
-            <h3 class="area-title">Em andamento</h3>
-            <button class="toggle-area-button"></button>
+            <div class="area-header">
+                <h3 class="area-title">Em andamento</h3>
+                <button class="toggle-area-button"></button>
+            </div>
         </div>
         <div class="manage-area cadastre-course">
-            <h3 class="area-title">Cadastrar novo curso</h3>
-            <button class="toggle-area-button"></button>
+            <div class="area-header">
+                <h3 class="area-title">Cadastrar novo curso</h3>
+                <button class="toggle-area-button"></button>
+            </div>
+            <div class="area-body">
+                <label for="title-input">Título</label>
+                <input type="text" id="title-input">
+                <label for="category-select">Categoria</label>
+                <select id="category-select">
+                    <option value="Programação">Programação</option>
+                    <option value="Programação fullstack">Programação fullstack</option>
+                    <option value="Programação front-end">Programação front-end</option>
+                    <option value="Programação back-end">Programação back-end</option>
+                    <option value="Design web">Design web</option>
+                    <option value="Design gráfico">Design gráfico</option>
+                    <option value="Software">Software</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Configuração de redes">Configuração de redes</option>
+                </select>
+                <label for="description-textarea">Descrição</label>
+                <textarea id="description-textarea" rows="5"></textarea>
+
+                <input type="submit" value="Publicar">
+            </div>
         </div>
     </main>
 </body>
