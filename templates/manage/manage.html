@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="manage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="script.js" defer></script>
     <title>Gerenciar cursos</title>
 </head>
 <body>
@@ -62,13 +63,90 @@
                 <h3 class="area-title">Cursos publicados</h3>
                 <button class="toggle-area-button"></button>
             </div>
+            <div class="area-body">
+                <div class="search-container">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="Pesquisar por cursos" aria-label="Barra de pesquisa de cursos"
+                    spellcheck="false">
+                </div>
+                <div class="courses-space">
+                    <div class="column1">
+                        <div class="course-card">
+                            <h4 class="course-title">XML e JSON</h4>
+                            <ul class="course-data">
+                                <li>26 aulas</li>
+                                <li>22 atividades</li>
+                                <li>256 matrículas</li>
+                                <li>87 certificados</li>
+                            </ul>
+                        </div>
+                        <div class="course-card">
+                            <h4 class="course-title">C# para Unity</h4>
+                            <ul class="course-data">
+                                <li>12 aulas</li>
+                                <li>14 atividades</li>
+                                <li>112 matrículas</li>
+                                <li>46 certificados</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="course-card">
+                            <h4 class="course-title">SCSS e SASS</h4>
+                            <ul class="course-data">
+                                <li>34 aulas</li>
+                                <li>46 atividades</li>
+                                <li>230 matrículas</li>
+                                <li>198 certificados</li>
+                            </ul>
+                        </div>
+                        <div class="course-card">
+                            <h4 class="course-title">Java Orientado a Objetos</h4>
+                            <ul class="course-data">
+                                <li>46 aulas</li>
+                                <li>38 atividades</li>
+                                <li>543 matrículas</li>
+                                <li>423 certificados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="manage-area not-done-courses">
             <div class="area-header">
                 <h3 class="area-title">Em andamento</h3>
                 <button class="toggle-area-button"></button>
             </div>
+            <div class="area-body">
+                <div class="search-container">
+                    <i class="bi bi-search"></i>
+                    <input type="search" placeholder="Pesquisar por cursos" aria-label="Barra de pesquisa de cursos"
+                    spellcheck="false">
+                </div>
+                <div class="nd-courses-space">
+                    <div class="column1">
+                        <div class="nd-course-card">
+                            <h4 class="course-title">Python e Flask</h4>
+                            <ul class="course-data">
+                                <li>28 aulas publicadas</li>
+                                <li>12 exercícios</li>
+                            </ul>
+                        </div>
+                        <div class="nd-course-card">
+                            <h4 class="course-title">C# Web</h4>
+                            <ul class="course-data">
+                                <li>14 aulas publicadas</li>
+                                <li>8 exercícios</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column2"></div>
+                </div>
+            </div>
         </div>
+        
         <div class="manage-area cadastre-course">
             <div class="area-header">
                 <h3 class="area-title">Cadastrar novo curso</h3>
