@@ -283,7 +283,7 @@ body {
                 flex-direction: column;
                 justify-content: flex-start;
                 flex-wrap: wrap;
-                height: 24em;
+                max-height: 24em;
                 margin: 1em 0 34px;
                 gap: 32px;
 
@@ -394,7 +394,7 @@ body {
                 background-color: var(--brand-600);
                 color: white;
                 width: 27%;
-                height: 2.35em;
+                height: 2.8em;
                 font-size: 12px;
                 transition: .2s all ease;
                 margin-top: 28px;
