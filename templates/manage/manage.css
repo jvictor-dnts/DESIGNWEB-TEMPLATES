@@ -410,3 +410,70 @@ body {
         }
     }
 }
+body.dark-theme {
+  --page-bg-color: #045262;
+  --sidebar-gradient: linear-gradient(180deg, #09404c 0%, #02313a 100%);
+  --sidebar-shadow: 0 0 16px 0 #0007;
+  --profile-card-bg-color: #037991;
+  --brand-950: #ffffff;
+  --brand-900: #e6f6f9;
+  --brand-800: #b7e3ec;
+  --brand-700: #87d0df;
+  --brand-600: #5db6c8;
+  --brand-500: #11b2d3;
+  --brand-400: #1ad1f2;
+  --brand-300: #00c3ff;
+  --input-bg: #085d6e;
+  --input-border: #85d0e0;
+  --input-text: #ffffff;
+  --label-color: #ffffff;
+  --aside-ident-active: #11b2d3;
+  --button-bg: #11b2d3;
+  --button-text: #fff;
+  --button-bg-hover: #0e90a5;
+}
+body.dark-theme .areas-container .area-header .area-title,
+body.dark-theme .areas-container .area-body label {
+  color: var(--label-color);
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+  background: var(--input-bg);
+  border: 1.5px solid var(--input-border);
+  color: var(--input-text);
+}
+
+body.dark-theme input[type=submit] {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+body.dark-theme input[type=submit]:hover {
+  background: var(--button-bg-hover);
+}
+
+body.dark-theme .sidebar .aside-ident-text,
+body.dark-theme .sidebar .profile-card .user-name,
+body.dark-theme .sidebar .profile-card .user-type {
+  color: var(--label-color) !important;
+}
+
+body.dark-theme .sidebar nav a.selected,
+body.dark-theme .sidebar nav a:hover {
+  background: var(--aside-ident-active);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+}
+body.dark-theme .sidebar nav a.selected i,
+body.dark-theme .sidebar nav a.selected span {
+  color: #fff !important;
+}
+
+body.dark-theme .sidebar nav a i,
+body.dark-theme .sidebar nav a span {
+  color: #cff6ff;
+}
+body.dark-theme .sidebar .leave span,
+body.dark-theme .sidebar .leave i {
+  color: #cff6ff;
+}

@@ -378,3 +378,94 @@ body {
         color: var(--brand-500);
     }
 }
+
+body.dark-theme {
+  --page-bg-color: #045262;
+  --sidebar-gradient: linear-gradient(180deg, #09404c 0%, #02313a 100%);
+  --sidebar-shadow: 0 0 16px 0 #0007;
+  --profile-card-bg-color: #037991;
+  --brand-950: #ffffff;
+  --brand-900: #e6f6f9;
+  --brand-800: #b7e3ec;
+  --brand-700: #87d0df;
+  --brand-600: #5db6c8;
+  --brand-500: #11b2d3;
+  --brand-400: #1ad1f2;
+  --brand-300: #00c3ff;
+  --cards-gradient: linear-gradient(160deg, #06697d 60%, #044a59 100%);
+  --search-container-color: #b7e3ec;
+  --search-container-color2: #11b2d3;
+  --shadow-brand-color: #11b2d388;
+}
+
+body.dark-theme .sidebar .aside-ident-text,
+body.dark-theme .sidebar .profile-card .user-name,
+body.dark-theme .sidebar .profile-card .user-type {
+  color: #fff !important;
+}
+
+body.dark-theme .sidebar nav a.selected,
+body.dark-theme .sidebar nav a:hover {
+  background: var(--brand-500) !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .15);
+}
+body.dark-theme .sidebar nav a.selected i,
+body.dark-theme .sidebar nav a.selected span {
+  color: #fff !important;
+}
+body.dark-theme .sidebar nav a i,
+body.dark-theme .sidebar nav a span {
+  color: #cff6ff;
+}
+body.dark-theme .sidebar .leave span,
+body.dark-theme .sidebar .leave i {
+  color: #cff6ff;
+}
+
+body.dark-theme .search-container i {
+  color: var(--search-container-color);
+}
+body.dark-theme .search-container input {
+  background: none;
+  border: 1.5px solid var(--search-container-color);
+  color: var(--brand-950);
+}
+body.dark-theme .search-container input::placeholder {
+  color: var(--search-container-color);
+}
+
+body.dark-theme .dashboard .card {
+  background: var(--cards-gradient);
+}
+body.dark-theme .dashboard .card .card-title,
+body.dark-theme .dashboard .card .card-section-title,
+body.dark-theme .dashboard .card .card-section-subtitle,
+body.dark-theme .dashboard .card ul,
+body.dark-theme .dashboard .card .texts-container span {
+  color: #fff;
+}
+body.dark-theme .dashboard .card .progress-bar-background,
+body.dark-theme .dashboard .card .result-bar-background {
+  background: #004a59;
+}
+body.dark-theme .dashboard .card .progress-bar {
+  background-color: #1eb200;
+}
+body.dark-theme .dashboard .card .result-bar {
+  background: #11b2d3;
+}
+body.dark-theme input[type=checkbox] {
+  border: 1.5px solid var(--brand-500);
+}
+body.dark-theme input[type=checkbox]:checked {
+  background: var(--brand-500);
+  border-color: var(--brand-500);
+}
+body.dark-theme .top-right-buttons button:first-child {
+  background: var(--brand-500);
+  color: #fff;
+}
+body.dark-theme .top-right-buttons button:last-child {
+  border: 1.5px solid var(--brand-500);
+  color: var(--brand-500);
+}
