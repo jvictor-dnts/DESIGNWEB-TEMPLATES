@@ -469,3 +469,6 @@ body.dark-theme .top-right-buttons button:last-child {
   border: 1.5px solid var(--brand-500);
   color: var(--brand-500);
 }
+body, body * {
+    transition: background-color 0.4s, color 0.4s, border-color 0.4s, box-shadow 0.4s;
+}

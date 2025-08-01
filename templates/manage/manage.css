@@ -477,3 +477,12 @@ body.dark-theme .sidebar .leave span,
 body.dark-theme .sidebar .leave i {
   color: #cff6ff;
 }
+body.dark-theme .course-title {
+  color: #fff !important;
+}
+body.dark-theme .course-data {
+  color: #b7e3ec  !important;
+}
+body, body * {
+    transition: background-color 0.4s, color 0.4s, border-color 0.4s, box-shadow 0.4s;
+}
